@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MJ BTS Gaming | BTS Member Gaming Hub</title>
+  <meta name="description" content="MJ BTS Gaming — a stylish BTS member gaming hub.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home"><span>MJ</span> BTS GAMING</a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#members">Members</a>
+    <a href="#games">Games</a>
+    <a href="#about">About</a>
+  </nav>
+  <button class="menu" aria-label="Menu">☰</button>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">MJ • BTS MEMBER GAMING HUB</p>
+      <h1>PLAY WITH<br><span>BTS ENERGY</span></h1>
+      <p class="hero-text">Explore a stylish gaming hub inspired by the seven BTS members. Pick a member, browse games, and enjoy the MJ gaming experience.</p>
+      <a class="btn primary" href="#members">Explore Members <b>→</b></a>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orb"></div>
+      <div class="grid"></div>
+      <div class="hero-card">BTS<br><small>MJ GAMING</small></div>
+    </div>
+  </section>
+
+  <section class="toolbar" id="members">
+    <div>
+      <p class="section-kicker">BTS MEMBER COLLECTION</p>
+      <h2>Choose Your Member</h2>
+    </div>
+    <div class="search-wrap">
+      <span>⌕</span>
+      <input id="search" type="search" placeholder="Search member...">
+    </div>
+  </section>
+
+  <section class="chips">
+    <button class="chip active" data-category="All">All</button>
+    <button class="chip" data-category="RM">RM</button>
+    <button class="chip" data-category="Jin">Jin</button>
+    <button class="chip" data-category="SUGA">SUGA</button>
+    <button class="chip" data-category="j-hope">j-hope</button>
+    <button class="chip" data-category="Jimin">Jimin</button>
+    <button class="chip" data-category="V">V</button>
+    <button class="chip" data-category="Jung Kook">Jung Kook</button>
+  </section>
+
+  <section class="member-grid" id="memberGrid">
+    <div class="member-intro">
+      <p class="section-kicker">BTS MEMBER ZONE</p>
+      <h2>Choose Your Member</h2>
+      <p class="hero-text">RM • Jin • SUGA • j-hope • Jimin • V • Jung Kook</p>
+    </div>
+  </section>
+  <p class="empty" id="empty">No member found.</p>
+
+  <section class="games" id="games">
+    <div class="section-heading">
+      <p class="section-kicker">MJ GAME LIBRARY</p>
+      <h2>Popular PC Games</h2>
+    </div>
+    <div class="chips game-filters">
+      <button class="chip active" data-category="All">All Games</button>
+      <button class="chip" data-category="HITMAN">HITMAN</button>
+      <button class="chip" data-category="Grand Theft Auto">GTA</button>
+      <button class="chip" data-category="Need for Speed">NFS</button>
+      <button class="chip" data-category="Assassin's Creed">Assassin's Creed</button>
+      <button class="chip" data-category="Red Dead">Red Dead</button>
+      <button class="chip" data-category="Cyberpunk">Cyberpunk</button>
+      <button class="chip" data-category="Far Cry">Far Cry</button>
+      <button class="chip" data-category="Watch Dogs">Watch Dogs</button>
+    </div>
+    <div class="member-grid" id="gameGrid"></div>
+    <p class="empty" id="empty">No games found.</p>
+  </section>
+
+  <section class="notice" id="about">
+    <div class="notice-icon">MJ</div>
+    <div>
+      <h3>About MJ BTS Gaming</h3>
+      <p>This is a fan-style gaming website concept using BTS member names as themed profiles. It is not affiliated with or endorsed by BTS, BIGHIT MUSIC, HYBE, or their representatives.</p>
+    </div>
+  </section>
+</main>
+
+<div class="requirements-modal" id="requirementsModal">
+  <div class="requirements-box">
+    <button class="req-close" onclick="closeRequirements()">×</button>
+    <p class="section-kicker">PC REQUIREMENTS</p>
+    <h2 id="reqTitle"></h2>
+    <p id="reqGenre" class="meta"></p>
+    <div class="req-columns">
+      <div><h3>Minimum</h3><p id="reqMin"></p></div>
+      <div><h3>Recommended</h3><p id="reqRec"></p></div>
+    </div>
+  </div>
+</div>\n<footer>
+  <div><strong>MJ BTS GAMING</strong><span>© <span id="year"></span> • Fan-made concept</span></div>
+  <div class="footer-links"><a href="#home">Home</a><a href="#members">Members</a></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
